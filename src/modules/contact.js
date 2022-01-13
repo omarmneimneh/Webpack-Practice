@@ -1,6 +1,6 @@
 function contactPage(){
     const div = document.createElement('div')
-    div.classList.add('contact')
+    div.classList.add('container')
 
     const contacts = [
         {
@@ -31,10 +31,10 @@ function contactPage(){
 
 function nameDiv(name){
     const div = document.createElement('div');
-    div.classList.add('name')
+    div.classList.add('info')
 
     const title = document.createElement('h2')
-    title.setAttribute('id', 'title')
+    title.setAttribute('id', 'desc')
     title.innerHTML = `${name}`
 
     div.appendChild(title)
@@ -44,7 +44,7 @@ function nameDiv(name){
 
 function numberDiv(number){
     const div = document.createElement('div');
-    div.classList.add('number')
+    div.classList.add('info')
 
     const numero = document.createElement('p')
     numero.setAttribute('id', 'desc')
@@ -57,7 +57,7 @@ function numberDiv(number){
 
 function emailDiv(email){
     const div = document.createElement('div');
-    div.classList.add('email')
+    div.classList.add('info')
 
     const emailrooski = document.createElement('p')
     emailrooski.setAttribute('id', 'desc')
@@ -76,4 +76,4 @@ function contactsLoader(){
     content.appendChild(contactPage())
 }
 
-export default contactsLoader()
+export default contactsLoader

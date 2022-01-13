@@ -1,10 +1,9 @@
-
 function nameDiv(name){
     const div = document.createElement('div');
-    div.classList.add('name')
+    div.classList.add('info')
 
     const title = document.createElement('h2')
-    title.setAttribute('id', 'title')
+    title.setAttribute('id', 'desc')
     title.innerHTML = `${name}`
 
     div.appendChild(title)
@@ -14,7 +13,7 @@ function nameDiv(name){
 
 function descDiv(desc){
     const div = document.createElement('div');
-    div.classList.add('desc')
+    div.classList.add('info')
 
     const description = document.createElement('p')
     description.setAttribute('id', 'desc')
@@ -27,10 +26,10 @@ function descDiv(desc){
 
 function priceDiv(price){
     const div = document.createElement('div');
-    div.classList.add('price')
+    div.classList.add('info')
 
     const amount = document.createElement('p')
-    amount.setAttribute('id', 'price')
+    amount.setAttribute('id', 'desc')
     amount.innerHTML = `${price}`
 
     div.appendChild(amount)
@@ -40,7 +39,7 @@ function priceDiv(price){
 
 function menu(){
     const div = document.createElement('div')
-    div.classList.add('menu')
+    div.classList.add('container')
 
     const items = [
         {
