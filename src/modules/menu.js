@@ -1,45 +1,44 @@
+function createDivs(contact){
+    const div = document.createElement('div')
+    div.classList.add('contact')
+    div.appendChild(nameDiv(contact.name))
+    div.appendChild(descDiv(contact.description))
+    div.appendChild(priceDiv(contact.price))
+
+    return div;
+}
+
 function nameDiv(name){
-    const div = document.createElement('div');
-    div.classList.add('info')
 
     const title = document.createElement('h2')
     title.setAttribute('id', 'desc')
     title.innerHTML = `${name}`
 
-    div.appendChild(title)
 
-    return div;
+    return title;
 }
 
 function descDiv(desc){
-    const div = document.createElement('div');
-    div.classList.add('info')
 
     const description = document.createElement('p')
     description.setAttribute('id', 'desc')
     description.innerHTML = `${desc}`
 
-    div.appendChild(description)
 
-    return div;
+    return description;
 }
 
 function priceDiv(price){
-    const div = document.createElement('div');
-    div.classList.add('info')
-
     const amount = document.createElement('p')
     amount.setAttribute('id', 'desc')
     amount.innerHTML = `${price}`
 
-    div.appendChild(amount)
-
-    return div;
+    return amount;
 }
 
 function menu(){
     const div = document.createElement('div')
-    div.classList.add('container')
+    div.classList.add('contacts')
 
     const items = [
         {
@@ -69,9 +68,7 @@ function menu(){
     ]
 
     items.forEach(item => {
-        div.appendChild(nameDiv(item.name))
-        div.appendChild(descDiv(item.description))
-        div.appendChild(priceDiv(item.price))
+        div.appendChild(createDivs(item))
     });
 
     return div;

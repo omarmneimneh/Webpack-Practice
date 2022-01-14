@@ -1,6 +1,6 @@
 function makeNameDiv(){
     const name = document.createElement('div')
-    name.classList.add('name');
+    name.classList.add('info');
     const title = document.createElement('h1')
     title.setAttribute('id', 'title')
     title.innerHTML = 'Omieshots'
@@ -15,7 +15,7 @@ function makeNameDiv(){
 
 function hoursDiv(){
     const hours = document.createElement('div');
-    hours.classList.add('hours');
+    hours.classList.add('info');
     const SunthroughThurs = document.createElement('h3');
     SunthroughThurs.setAttribute('id','hours');
     SunthroughThurs.textContent = 'Sunday-Thursday: 10am-9pm';
@@ -30,7 +30,7 @@ function hoursDiv(){
 
 function homePage(){
     const div = document.createElement('div');
-    div.classList.add('home');
+    div.classList.add('container');
 
     //name of the restaurant
     div.appendChild(makeNameDiv())

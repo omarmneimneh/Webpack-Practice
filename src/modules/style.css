@@ -2,6 +2,106 @@
     margin: 0 auto;
 }
 
+.topBar{
+    width: 100vw;
+    height: 60px;
+}
+
+.innerBar{
+    display: flex;
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 100%;
+    
+}
+
+.logo h3{
+    font-size: 28px;
+    font-weight: 600;
+    vertical-align: middle;
+    font-family: 'Roboto Mono', monospace;
+    color: #292c34;;
+}
+
+.logo span{
+    font-weight: 200;
+}
+
+.buttons{
+    height: 100%;
+}
+
+#menu{
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px black solid;
+    padding: .35rem;
+    cursor: pointer;
+}
+
+#menu:hover{
+    background: black;
+    color: white;
+}
 #content{
-    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    background-color: #CDCDCD ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+.info{
+    margin: 10px auto;
+    border: 3px black solid;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+    font-size: 20px;
+    width: 75%;
+}
+
+.contacts{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact{
+    margin: 10px auto;
+    border: 3px black solid;
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }

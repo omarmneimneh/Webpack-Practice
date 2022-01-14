@@ -1,7 +1,6 @@
 function contactPage(){
     const div = document.createElement('div')
-    div.classList.add('container')
-
+    div.classList.add('contacts')
     const contacts = [
         {
             'name': 'Cool Guy',
@@ -21,51 +20,46 @@ function contactPage(){
     ]
 
     contacts.forEach(contact => {
-        div.appendChild(nameDiv(contact.name))
-        div.appendChild(numberDiv(contact.number))
-        div.appendChild(emailDiv(contact.email))
+        div.appendChild(createDivs(contact))
     });
 
     return div;
 }
 
-function nameDiv(name){
-    const div = document.createElement('div');
-    div.classList.add('info')
+function createDivs(contact){
+    const div = document.createElement('div')
+    div.classList.add('contact')
+    div.appendChild(nameDiv(contact.name))
+    div.appendChild(numberDiv(contact.number))
+    div.appendChild(emailDiv(contact.email))
 
+    return div;
+}
+
+function nameDiv(name){
     const title = document.createElement('h2')
     title.setAttribute('id', 'desc')
     title.innerHTML = `${name}`
 
-    div.appendChild(title)
-
-    return div;
+    return title;
 }
 
 function numberDiv(number){
-    const div = document.createElement('div');
-    div.classList.add('info')
-
     const numero = document.createElement('p')
     numero.setAttribute('id', 'desc')
     numero.innerHTML = `${number}`
 
-    div.appendChild(numero)
 
-    return div;
+    return numero;
 }
 
 function emailDiv(email){
-    const div = document.createElement('div');
-    div.classList.add('info')
 
     const emailrooski = document.createElement('p')
     emailrooski.setAttribute('id', 'desc')
     emailrooski.innerHTML = `${email}`
 
-    div.appendChild(emailrooski)
-
-    return div;
+    return emailrooski;
 }
 
 function contactsLoader(){
