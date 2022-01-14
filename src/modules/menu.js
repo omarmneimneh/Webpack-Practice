@@ -85,4 +85,4 @@ function menuLoader(){
 }
 
 
-export default menuLoader()
+export default menuLoader
